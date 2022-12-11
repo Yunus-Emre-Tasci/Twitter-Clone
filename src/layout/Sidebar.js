@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import twitterLogo from "../images/twitter.svg";
 import { HomeIcon,
   ExploreIcon,
@@ -9,8 +9,49 @@ import { HomeIcon,
   ProfileIcon,
   MoreIcon,
   PopulerIcon,ImageIcon,GIFIcon,PollIcon,EmojiIcon,ScheduleIcon,ReplyIcon,ReTweetIcon,LikeIcon,ShareIcon,SearchIcon } from '../icons/icon';
+  import SideLink from '../components/SideLink';
+
+  const sideLinks = [{
+        name: "Home",
+        icon: HomeIcon,
+      },
+      {
+        name: "Explore",
+        icon: ExploreIcon,
+      },
+      {
+        name: "Notifications",
+        icon: NotificationsIcon,
+      },
+      {
+        name: "Messages",
+        icon: MessagesIcon,
+      },
+      {
+        name: "Bookmarks",
+        icon: BookmarksIcon,
+      },
+      {
+        name: "Lists",
+        icon: ListsIcon,
+      },
+      {
+        name: "Profile",
+        icon: ProfileIcon,
+      },
+      {
+        name: "More",
+        icon: MoreIcon,
+      },
+    ]
 
 const Sidebar = () => {
+  const [active, setActive] = useState("Home")
+
+  const handleMenuItemClick=(name)=>{
+      setActive(name)
+  }
+
   return (
     <div className='flex flex-col justify-between px-2 w-72'>
       <div>
@@ -19,14 +60,32 @@ const Sidebar = () => {
         </div>
         <nav className='mb-4'>
           <ul>
-            <li><HomeIcon/></li>
-            <li><ExploreIcon/></li>
-            <li><NotificationsIcon/></li>
-            <li><MessagesIcon/></li>
-            <li><BookmarksIcon/></li>
-            <li><ListsIcon/></li>
-            <li><ProfileIcon/></li>
-            <li><MoreIcon/></li>
+            {
+              sideLinks.map((({
+                      name,
+                      icon
+                    }) => < SideLink key = {
+                      name
+                    }
+                    name = {
+                      name
+                    }
+                    Icon = {
+                      icon
+                    }
+                    active = {
+                      active
+                    } onMenuItemClick={handleMenuItemClick}
+                    /> ))
+            }
+            {/* <li><HomeIcon/></li> */}
+            {/* <li><ExploreIcon/></li> */}
+            {/* <li><NotificationsIcon/></li> */}
+            {/* <li><MessagesIcon/></li> */}
+            {/* <li><BookmarksIcon/></li> */}
+            {/* <li><ListsIcon/></li> */}
+            {/* <li><ProfileIcon/></li> */}
+            {/* <li><MoreIcon/></li> */}
           </ul>
         </nav>
         {/* <HomeIcon/>
