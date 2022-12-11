@@ -10,6 +10,7 @@ import { HomeIcon,
   MoreIcon,
   PopulerIcon,ImageIcon,GIFIcon,PollIcon,EmojiIcon,ScheduleIcon,ReplyIcon,ReTweetIcon,LikeIcon,ShareIcon,SearchIcon } from '../icons/icon';
   import SideLink from '../components/SideLink';
+import UserBox from '../components/UserBox';
 
   const sideLinks = [{
         name: "Home",
@@ -98,8 +99,7 @@ const Sidebar = () => {
         <MoreIcon/> */}
         <button className='bg-primary-base hover:bg-primary-dark text-white rounded-full py-3 px-8 w-11/12 shadow-lg transform transition-colors duration-200'>Tweet</button>
       </div>
-      <div>Alt</div>
-        
+      <UserBox/>
     </div>
   )
 }
