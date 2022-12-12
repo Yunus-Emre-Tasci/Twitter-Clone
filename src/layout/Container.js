@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import db from "../firebase"
 
 const Container = ({children}) => {
   return (
