@@ -21,7 +21,7 @@ const Widget = () => {
         }
         options = {
           {
-            height: '500'
+            height: '1000'
           }
         }
         />
