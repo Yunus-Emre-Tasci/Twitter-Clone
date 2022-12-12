@@ -13,7 +13,7 @@ const TweetBox = () => {
             username:"@YunusEmre_Tasci",
             content:content,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            image:"https://64.media.tumblr.com/c9f8bdfb7ae61c3eb8a00e6ac5ca11a4/07dd3f9d137818fd-4f/s540x810/d83025e503bc5955cb004606132a99794b0cfab5.gif",
+            image: "https://media2.giphy.com/media/G3Hu8RMcnHZA2JK6x1/giphy.gif?cid=ecf05e47fhnvmdjown5wd4y6uw8zmdu69xwjoice2jdzt5lb&rid=giphy.gif&ct=g",
             avatar:"https://media-exp1.licdn.com/dms/image/D4D03AQEPj1WugNGXnw/profile-displayphoto-shrink_800_800/0/1665087736518?e=1676505600&v=beta&t=o8mDsKT8N0yqjB0D_xDmBfOe5NS7OYcMBulIgboXoTE"
         })
 
