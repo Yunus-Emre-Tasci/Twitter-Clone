@@ -5,7 +5,7 @@ const SideLink = ({
         Icon,
         onMenuItemClick,active
     }) => {
-        const isActive=active===name
+const isActive=active===name
   return (
     <li className = 'group'
     onClick = {()=>
