@@ -16,9 +16,9 @@ const Content = () => {
         < img src = "https://media-exp1.licdn.com/dms/image/D4D03AQEPj1WugNGXnw/profile-displayphoto-shrink_800_800/0/1665087736518?e=1676505600&v=beta&t=o8mDsKT8N0yqjB0D_xDmBfOe5NS7OYcMBulIgboXoTE"
         alt = "Profie"
         className = 'w-11 h-11 rounded-full'/>
-        <div>
+        
           <TweetBox/>
-        </div>
+        
        </div>
        <Divider/>
     </main>
