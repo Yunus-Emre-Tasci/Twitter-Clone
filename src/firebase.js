@@ -4,7 +4,7 @@ import firebase from 'firebase/compat/app';
     // initializeApp
 // } from "firebase/app";
 // import "firebase/database"
-import "firebase/compat/database";
+// import "firebase/compat/database";
 import 'firebase/compat/firestore'
 
 
